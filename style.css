@@ -6,14 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4; /* Fundo geral claro */
+    background-color: #f4f4f4;
+    color: #c8c6c6d3;
 }
-
 header {
     padding: 20px;
-    background-color: #333;
+    background: linear-gradient(to bottom, #000, #333); 
     color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
 }
 
 .header-content h1, .header-content p {
@@ -25,13 +28,17 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh; /* Ocupa metade da tela */
-    background-color: #d3d3d3; /* Cinza claro */
+    height: 50vh; 
+    background-color: #333;
 }
 
 .texto {
     font-size: 28px;
     font-weight: bold;
+}
+
+.btn {
+    padding: 10px 30px;
 }
 
 .riscado {
@@ -47,7 +54,7 @@ section {
 
 footer {
     padding: 20px;
-    background: linear-gradient(to bottom, #333, #000); /* Cinza ao preto */
+    background: linear-gradient(to bottom, #333, #000);
     color: white;
     text-align: center;
 }

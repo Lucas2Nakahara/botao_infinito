@@ -16,7 +16,11 @@
     <section>
         <div class="texto">
             Você quer <span class="riscado">Namorar</span> <span class="lado">Casar</span> comigo?
-        </div>    
+        </div>   
+        <div class="botoes">
+            <button class="btn" onclick="responder('sim')">Sim</button>
+            <button class="btn nao" id="nao-btn">Não</button>
+        </div> 
     </section>
 
     <footer>
@@ -26,6 +30,37 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function responder(resposta) {
+            if (resposta === 'sim') {
+                alert("Ótima escolha! Vamos ser felizes juntos!");
+            }
+        }
+
+        let contador = 0;
+        const frases = [
+            "Tem certeza? ",
+            "Pensa melhor... ",
+        ];
+
+        function mudarTexto() {
+            let botaoNao = document.getElementById("nao-btn");
+            if (contador < frases.length) {
+                botaoNao.innerText = frases[contador];
+                contador++;
+            } else {
+                botaoNao.innerText = "Tá bom, eu aceito ";
+            }
+
+            let novaPosX = Math.random() * (window.innerWidth - 100);
+            let novaPosY = Math.random() * (window.innerHeight - 100);
+            
+            botaoNao.style.position = "absolute";
+            botaoNao.style.left = novaPosX + "px";
+            botaoNao.style.top = novaPosY + "px";
+        }
+        document.getElementById("nao-btn").addEventListener("mouseover", mudarTexto);
+    </script>
 </body>
 </html>
+
