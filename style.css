@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4; /* Fundo geral claro */
+}
+
+header {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.header-content h1, .header-content p {
+    margin: 10px 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh; /* Ocupa metade da tela */
+    background-color: #d3d3d3; /* Cinza claro */
+}
+
+.texto {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.riscado {
+    text-decoration: line-through;
+    color: red;
+}
+
+.lado {
+    margin-left: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+footer {
+    padding: 20px;
+    background: linear-gradient(to bottom, #333, #000); /* Cinza ao preto */
+    color: white;
+    text-align: center;
+}
